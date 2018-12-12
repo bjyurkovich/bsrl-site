@@ -654,8 +654,10 @@ console.log(
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, "load", init);
 
-    var mkr = new google.maps.LatLng(40.67, -74.2);
-    var cntr = mobileTest ? mkr : new google.maps.LatLng(40.67, -73.94);
+    var mkr = new google.maps.LatLng(47.6226406, -122.3462539);
+    var cntr = mobileTest
+      ? mkr
+      : new google.maps.LatLng(47.6226406, -122.3462539);
 
     function init() {
       // Basic options for a simple Google Map
